@@ -11,7 +11,7 @@
 #define AppDescription "Повелитель снов 2: Наследие тьмы."                                     ; Описание программы
 #define Typ "Russificier"                                                                    ; Тип приложения
 ; Практически никогда не меняется
-#define AppVer "1"                                                                        ; Версия установщика
+#define AppVer "2"                                                                        ; Версия установщика
 #define Platz "C:\Users\TeMeR\Documents\GitHub"                                                    ; Место
 ; Константы
 #define Copyright "Folk"                                                                  ; (констант)Копирайт
@@ -113,7 +113,7 @@ Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\{#Arciv} -y -o""{app}\{#P
 
 [UninstallDelete]
 Type: files;          Name: "{app}\{#Path}\resources.assets";
-;Type: filesandordirs; Name: "{app}\{#Path}\extra_data";
+Type: filesandordirs; Name: "{app}\{#Path}\extra_data";
 
 [Code]
 var
